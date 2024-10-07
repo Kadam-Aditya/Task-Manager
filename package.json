@@ -1,0 +1,19 @@
+{
+  "name": "mern-task-manager",
+  "version": "1.0.0",
+  "description": "A basic tasks management",
+  "main": "index.js",
+  "scripts": {
+    "dev-server": "npm run dev --prefix backend",
+    "dev-client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run dev-server\" \"npm run dev-client\"",
+    "install-all": "npm install && npm install --prefix frontend && npm install --prefix backend",
+    "start": "cd backend && node app.js"
+  },
+  "keywords": "" ,
+  "author": "" ,
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^7.1.0"
+  }
+}
